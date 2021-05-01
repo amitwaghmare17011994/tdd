@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout Container should render Layout Container 1`] = `
+<div
+  className="makeStyles-container-1"
+>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "justifyContent": "center",
+        "padding": 20,
+      }
+    }
+  />
+</div>
+`;

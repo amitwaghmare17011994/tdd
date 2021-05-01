@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Age Calculator should render AgeCalculator 1`] = `
+<div
+  className="makeStyles-container-1"
+>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "justifyContent": "center",
+        "padding": 20,
+      }
+    }
+  >
+    <div
+      className="MuiPaper-root MuiPaper-elevation3 MuiPaper-rounded"
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "flexDirection": "column",
+          "height": 500,
+          "justifyContent": "space-evenly",
+          "width": 550,
+        }
+      }
+    >
+      <input
+        onChange={[Function]}
+        placeholder="Enter you birthdate"
+        type="date"
+      />
+      <button
+        className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary"
+        disabled={false}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          Calculate
+        </span>
+      </button>
+      <span
+        id="res"
+      >
+        
+      </span>
+      <span
+        id="error"
+      >
+        
+      </span>
+    </div>
+  </div>
+</div>
+`;
