@@ -34,5 +34,12 @@ describe('Velocity Calculator', () => {
         const res = instance.findByType(Typography)
         expect(res.props.children).toBe(3)
     })
-
+    it('it should not show res', () => {
+        const button = instance.findByType(Button)
+        act(() => {
+            button.props.onClick()
+        })
+        const res = instance.findByType(Typography)
+        expect(res.props.children).toBe('')
+    })
 })

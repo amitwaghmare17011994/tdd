@@ -20,6 +20,7 @@ function VelocityCalculator(props) {
             const velocity = parseFloat(parseFloat(distance) / parseFloat(time))
             setState({ ...state, res: velocity })
         }
+        
     }
 
     return (
