@@ -7,8 +7,10 @@ import {
 import LayoutContainer from "./components/LayoutContainer";
 import AgeCalculator from "./pages/AgeCalculator";
 import BMICalculator from "./pages/BMICalculator";
-import HomePage from "./pages/HomePage";
+import VelocityCalculator from "./pages/VelocityCalculator";
 
+import HomePage from "./pages/HomePage";
+ 
 const StartPage = () => <LayoutContainer>
     Select App
     </LayoutContainer>
@@ -28,7 +30,9 @@ export default function Routes() {
                 <Route path="/age">
                     <AgeCalculator />
                 </Route>
-
+                <Route path="/vel">
+                    <VelocityCalculator />
+                </Route>
             </Switch>
         </Router>)
 }

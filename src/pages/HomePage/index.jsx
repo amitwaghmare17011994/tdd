@@ -37,7 +37,23 @@ const useStyles = makeStyles((theme: Theme) =>
     }),
 );
 
+const APPS = [{
+    route: '/bmi',
+    title: '  BMI Calculator'
+},
+{
+    route: '/age',
+    title: 'Age Calculator'
+}
+    , {
+    route: '/vel',
+    title: 'Velocity Calculator'
+}
+
+]
+
 export default function HomePage() {
+
     const classes = useStyles();
     const history = useHistory()
     const [currentPath, setCurrentPath] = useState(history.location.pathname)
@@ -45,7 +61,10 @@ export default function HomePage() {
         history.listen((path) => {
             setCurrentPath(path.pathname)
         })
-    })
+
+        
+    }, [])
+
     const onAppClick = (path) => {
         history.push(path)
     }
@@ -53,12 +72,13 @@ export default function HomePage() {
     return (
         <div className={classes.container}>
             <div className={classes.root}>
-                <Paper onClick={() => onAppClick('/bmi')} elevation={3} className={`${classes.paper} ${currentPath === '/bmi' ? classes.active : ''}`} >
-                    BMI Calculator
-                </Paper>
-                <Paper onClick={() => onAppClick('/age')} elevation={3} className={`${classes.paper} ${currentPath === '/age' ? classes.active : ''}`} >
-                    Age Calculator
-                </Paper>
+                {
+                    APPS.map((i) =>
+                        <Paper key={i.route} onClick={() => onAppClick(i.route)} elevation={3} className={`${classes.paper} ${currentPath === i.route ? classes.active : ''}`} >
+                            {i.title}
+                        </Paper>
+                    )
+                }
             </div>
         </div>
 
