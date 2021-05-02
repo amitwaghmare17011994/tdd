@@ -21,13 +21,15 @@ const useStyles = makeStyles((theme: Theme) =>
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'center',
-            cursor: 'pointer'
+            cursor: 'pointer',
+            minWidth: 150
         },
         root: {
             display: 'flex',
-            flexWrap: 'wrap',
             backgroundColor: '#141313',
             justifyContent: 'center',
+            overflowX: 'scroll',
+
             '& > *': {
                 margin: theme.spacing(1),
                 width: theme.spacing(16),
@@ -48,8 +50,7 @@ const APPS = [{
     , {
     route: '/vel',
     title: 'Velocity Calculator'
-}
-
+},
 ]
 
 export default function HomePage() {
@@ -62,7 +63,7 @@ export default function HomePage() {
             setCurrentPath(path.pathname)
         })
 
-        
+
     }, [])
 
     const onAppClick = (path) => {
