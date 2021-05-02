@@ -60,11 +60,12 @@ exports[`Age Calculator should render AgeCalculator 1`] = `
       >
         
       </span>
-      <span
+      <p
+        className="MuiTypography-root MuiTypography-body1"
         id="error"
       >
         
-      </span>
+      </p>
     </div>
   </div>
 </div>
