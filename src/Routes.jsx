@@ -10,7 +10,8 @@ import BMICalculator from "./pages/BMICalculator";
 import VelocityCalculator from "./pages/VelocityCalculator";
 
 import HomePage from "./pages/HomePage";
- 
+import DayFinder from "./pages/DayFinder";
+
 const StartPage = () => <LayoutContainer>
     Select App
     </LayoutContainer>
@@ -32,6 +33,9 @@ export default function Routes() {
                 </Route>
                 <Route path="/vel">
                     <VelocityCalculator />
+                </Route>
+                <Route path="/dayfinder">
+                    <DayFinder />
                 </Route>
             </Switch>
         </Router>)

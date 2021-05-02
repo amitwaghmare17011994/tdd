@@ -46,10 +46,14 @@ const APPS = [{
 {
     route: '/age',
     title: 'Age Calculator'
-}
-    , {
+},
+{
     route: '/vel',
     title: 'Velocity Calculator'
+},
+{
+    route: '/dayfinder',
+    title: 'Day Finder'
 },
 ]
 
